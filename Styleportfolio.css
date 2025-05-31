@@ -206,7 +206,11 @@ span {
 }
 
 .home-img {
-    border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it round (optional) */
+  margin-right: 20px;
 }
 
 
