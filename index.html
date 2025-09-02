@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="Styleportfolio.css">   
+    <link rel="stylesheet" href="Style.css">   
        <title>My Portfolio</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Woyas</a>
-        
-        <div class="theme-container">
-            <input type="checkbox" id="theme-toggle" class="theme-checkbox">
-            <label for="theme-toggle" class="theme-label">
-                <span class="icon moon">🌙</span>
-                <span class="icon sun">☀️</span>
-            </label>
-        </div>
-
-        <nav>
+        <div class="menu-btn" id="menu-btn">
+    ☰
+  </div>
+        <nav id="nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -41,7 +35,7 @@
                 <a href="https://www.facebook.com/Woyasali/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/yashh_ali/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="CV_1.pdf" class="btn" download="Sk_Woyas_Ai_RESUME" >Download Resume</a>
+            <a href="CVW.pdf" class="btn" download="Sk_Woyas_Ai_RESUME" >Download Resume</a>
     </div>
 </section>
 <section id="about" class="about-section">
@@ -76,6 +70,7 @@
 <section id="skills" class="skills-section">
     <h2 class="skills-title">My Skills</h2>
     <div class="skills-container">
+        <!-- HTML -->
         <div class="skill">
             <div class="skill-info">
                 <span class="skill-name">HTML</span>
@@ -86,6 +81,7 @@
             </div>
         </div>
 
+        <!-- CSS -->
         <div class="skill">
             <div class="skill-info">
                 <span class="skill-name">CSS</span>
@@ -96,6 +92,7 @@
             </div>
         </div>
 
+        <!-- JavaScript -->
         <div class="skill">
             <div class="skill-info">
                 <span class="skill-name">JavaScript</span>
@@ -105,34 +102,63 @@
                 <div class="progress-bar js"></div>
             </div>
         </div>
+
+        <!-- React -->
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">React</span>
+                <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar react"></div>
+            </div>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-percent">70%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar node"></div>
+            </div>
+        </div>
+
+        <!-- Express -->
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Express</span>
+                <span class="skill-percent">65%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar express"></div>
+            </div>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-percent">75%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar mongodb"></div>
+            </div>
+        </div>
     </div>
 </section>
+
 <!-- Certifications Section -->
 <section id="certifications" class="certifications-section">
     <h2 class="certifications-title">My Certifications</h2>
     <div class="certifications-container">
         <div class="cert-card">
-            <img src="Images/CERTIFICATE.jpg" alt="Certification 1">
+            <img src="Images/Internshala.png" alt="Certification 1">
             <div class="cert-info">
-                <h3>Certificate 1</h3>
-                <p>Certificate 1</p>
-                <a href="" target="_blank" class="view-cert">View Certificate</a>
-            </div>
-        </div>
-        <div class="cert-card">
-            <img src="Images/CERTIFICATE.jpg" alt="Certification 2">
-            <div class="cert-info">
-                <h3>Certificate 2</h3>
-                <p>Certificate 2</p>
-                <a href="" target="_blank" class="view-cert">View Certificate</a>
-            </div>
-        </div>
-        <div class="cert-card">
-            <img src="Images/CERTIFICATE.jpg" alt="Certification 3">
-            <div class="cert-info">
-                <h3>Certificate 3</h3>
-                <p>Certificate 3</p>
-                <a href="" target="_blank" class="view-cert">View Certificate</a>
+                <h3>Full Stack Development Course</h3>
+                <p>MERN Stack (Internshala)</p>
+                <a href="https://trainings.internshala.com/view_certificate/j9mu5dequvz/3bkkonivg58/" target="_blank" class="view-cert">View Certificate</a>
             </div>
         </div>
     </div>
@@ -142,39 +168,25 @@
     <h2 class="projects-title">My Projects</h2>
     <div class="projects-container">
         <div class="project-card">
-            <img src="Images/CALCULATOR.jpeg" alt="Project 1">
-            <h3>CALCULATOR</h3>
-            <a href="" class="view-project" target="_blank">View Project</a>
+            <img src="Images/Youtube-clone.png" alt="Project 1">
+            <h3>Youtube-clone</h3>
+            <a href="https://skwoyasali.github.io/Youtube-Frontend/" class="view-project" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="Images/ShoppyGlobe.png" alt="Project 5">
+            <h3>ShoppyGlobe</h3>
+            <a href="https://skwoyasali.github.io/ShoppyGlobe/" class="view-project" target="_blank">View Project</a>
         </div>
 
         <div class="project-card">
-            <img src="Images/QR.jpeg" alt="Project 2">
-            <h3>QR CODE</h3>
-            <a href="" class="view-project" target="_blank">View Project</a>
+            <img src="Images/Book-Website.png" alt="Project 2">
+            <h3>Book Library</h3>
+            <a href="https://skwoyasali.github.io/Book-Website/" class="view-project" target="_blank">View Project</a>
         </div>
-
-        <div class="project-card">
-            <img src="Images/START QUIZ.jpeg" alt="Project 3">
-            <h3>QUIZ</h3>
-            <a href="" class="view-project" target="_blank">View Project</a>
-        </div>
-
         <div class="project-card">
             <img src="Images/WeatherApp.png" alt="Project 4">
             <h3>WEATHER</h3>
             <a href="https://skwoyasali.github.io/Weather-Website/" class="view-project" target="_blank">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <img src="Images/Ecommerce.jpeg" alt="Project 5">
-            <h3>Ecommerce</h3>
-            <a href="" class="view-project">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <img src="Images/rock paper.jpeg" alt="Project 6">
-            <h3>Rock Paper</h3>
-            <a href="" class="view-project">View Project</a>
         </div>
     </div>
 </section>
@@ -214,8 +226,8 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
     </div>
-    <p class="footer-text">© 2025 My Portfolio. All rights reserved.</p>
+    <p class="footer-text">© 2025 Sk Woyas Ali. All rights reserved.</p>
 </footer>
-
+<script src="app.js"></script>
 </body>
 </html>

@@ -18,8 +18,8 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x:hidden;
     background-color: black;
     color: white;
@@ -188,7 +188,7 @@ padding: 5rem 9% 5rem;
     background-color: #161616;
 }
 
-.home .home.home-content h1 {
+.home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
@@ -221,7 +221,7 @@ span {
     box-shadow: 0 0 15px #b74b4b;
 }
 
-@media (max-width: 932px) {
+@media (max-width: 700px) {
   .home-img {
     height: 200px;
     width: 200px;
@@ -358,8 +358,10 @@ span {
 
 /* about section */
 .about-section {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     height: 100vh;
     padding: 40px;
@@ -381,7 +383,7 @@ span {
 }
 
 .about-title {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #b74b4b;
     margin-bottom: 15px;
 }
@@ -463,8 +465,9 @@ span {
 
 /* skillls section  */
 .skills-section {
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -538,8 +541,8 @@ span {
 
 /* certifications section */
 .certifications-section {
-    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -638,6 +641,7 @@ span {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: black;
@@ -731,10 +735,11 @@ span {
 
 /* Contact Section - Full Page */
 .contact-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background:#161616;
     color: white;
